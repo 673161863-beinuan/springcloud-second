@@ -1,0 +1,6 @@
+server:
+  port: 1000
+  
+spring:  application:    name: provider-1000
+eureka:  client:    service-url:      defaultZone: http://localhost:5000/eureka/
+management:  endpoints:    web:      exposure:        include:        - hystrix.stream    #仪表盘监控
