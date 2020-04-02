@@ -1,0 +1,13 @@
+server: 
+  port: 9000 
+spring: 
+  application: 
+    name: zuul-gateway 
+eureka:
+  client:
+    serviceUrl: 
+      defaultZone: http://localhost:5000/eureka/
+zuul:
+  ignored-services:                     # 指定忽略的微服务名称，让用户不能通过微服务名称访问  - feign-consumer-7000                 # 忽略的微服务名称   '*' 代表忽略所有  routes:    employee:                           #自定义名称
+      service-id: feign-consumer-7000   # 目标微服务名称，
+      path: /zuul-emp/**                # 用来代替目标微服务名称的路径， ZuulRoute 类型的一个属性
