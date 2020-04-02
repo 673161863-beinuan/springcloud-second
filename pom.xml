@@ -31,5 +31,7 @@
 		<module>spring-cloud-consumer</module>
 		<module>spring-cloud-eureka</module>
 		<module>spring-cloud-dashboard</module>
+		<module>spring-cloud-zuul</module>
+		<module>spring-cloud-consumer-feign</module>
 	</modules>
 </project>
